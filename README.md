@@ -11,12 +11,22 @@ alignment of the children can be easily manipulated.  Nesting of these boxes
 (horizontal inside vertical, or vertical inside horizontal) can be used to build
 layouts in two dimensions.
 
+###Use-cases
+- Vertically aligning elements
+- Making multiple <div>s the same height
+- Aligning elements based on a text's baseline
+
 ##Browser compatibility
-Flexbox has seen good support with most browsers, however, IE still has many bugs.
+Flexbox has seen good support with most browsers, however, IE still has many bugs. Check http://caniuse.com/#search=flexbox
+for updated support information.
+- 93% support for prefixed
+- 82% support for unprefixed
 
 
 ##How to use
-- Discuss main axis and cross axis
+- Main axis vs. cross axis
+  - If flex-direction is row, main axis is horizontal and cross axis is vertical
+  - If flex-direction is column, main axis is vertical and cross axis is horizontal
 
 
 - Wrap the elements you want to use flexbox on with a container such as a div or
