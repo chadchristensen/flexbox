@@ -11,10 +11,19 @@ alignment of the children can be easily manipulated.  Nesting of these boxes
 (horizontal inside vertical, or vertical inside horizontal) can be used to build
 layouts in two dimensions.
 
-- Syntax: old syntax vs. tweener syntax vs. new syntax
+- Syntax differences:
+  - old syntax
+  - tweener syntax
+  - new syntax
 - Main axis vs. cross axis
   - If flex-direction is row, main axis is horizontal and cross axis is vertical
   - If flex-direction is column, main axis is vertical and cross axis is horizontal
+
+####flex-direction set to row
+  <img src="img/flexdirectionrow" />
+
+####flex-direction set to column
+  <img src="img/flexdirectioncolumn" />
 
 ###Use-cases
 - Vertically aligning elements
@@ -32,7 +41,8 @@ for updated support information.
 1. Wrap the elements you want to use flexbox on with a container such as a div or
 section.
 2. Add a class to the container to target it with your css (ex. flex-container)
-3. Add html elements within the container and add a class such as "flex-item" to the elements
+3. Add html elements within the container
+4. Add classes to the child elements (ex. flex-item)
 
 ```html
 <section class="flex-container">
@@ -48,12 +58,12 @@ section.
   - display: -webkit-flex;
   - display: -ms-flexbox;
   - display: flex;
-- Set the flex direction (default direction is row).  Options are row,
+- Set the flex-direction (default direction is row).  Options are row,
 row reverse, column, column reverse.
   - -webkit-flex-direction: row;
   -  -ms-flex-direction: row;
   - flex-direction: row;
-- Set the wrap property if you don't want overflow
+- Set the wrap property if you don't want overflow.  Options are nowrap, wrap, wrap-reverse.
   - -webkit-flex-wrap: wrap;
   - -ms-flex-wrap: wrap;
   - flex-wrap: wrap;
