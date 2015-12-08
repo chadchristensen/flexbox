@@ -1,3 +1,7 @@
+body {
+  padding: 25px;
+}
+
 div {
   width: 100px;
   height: 100px;
@@ -35,7 +39,7 @@ section {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
- /* align-items: baseline;*/
+  /*align-items: baseline;*/
 
 }
 
