@@ -2,6 +2,11 @@
 Document describing the CSS flexbox at a high level
 #CSS: Flexbox
 
+##Use-cases
+- Vertically aligning elements
+- Making equal height columns
+- Aligning elements based on a text's baseline
+
 ##Overview
 
 In the flex layout model, the children of a flex container can be laid out in
@@ -12,23 +17,19 @@ alignment of the children can be easily manipulated.  Nesting of these boxes
 layouts in two dimensions.
 
 - Syntax differences:
-  - old syntax
-  - tweener syntax
-  - new syntax
+  - old syntax (2009)
+  - tweener syntax (2011)
+  - new syntax (2012)
+
 - Main axis vs. cross axis
   - If flex-direction is row, main axis is horizontal and cross axis is vertical
   - If flex-direction is column, main axis is vertical and cross axis is horizontal
 
 ####flex-direction set to row
-  <img src="img/flexdirectionrow" />
+  <img src="img/flexdirectionrow.png" style="width: 300px" />
 
 ####flex-direction set to column
-  <img src="img/flexdirectioncolumn" />
-
-###Use-cases
-- Vertically aligning elements
-- Making equal height columns
-- Aligning elements based on a text's baseline
+  <img src="img/flexdirectioncolumn.png" style="width: 250px" />
 
 ##Browser compatibility
 Flexbox has seen good support with most browsers, however, IE still has many bugs. Check http://caniuse.com/#search=flexbox
@@ -58,24 +59,31 @@ section.
   - display: -webkit-flex;
   - display: -ms-flexbox;
   - display: flex;
+
 - Set the flex-direction (default direction is row).  Options are row,
 row reverse, column, column reverse.
   - -webkit-flex-direction: row;
   -  -ms-flex-direction: row;
   - flex-direction: row;
+
 - Set the wrap property if you don't want overflow.  Options are nowrap, wrap, wrap-reverse.
   - -webkit-flex-wrap: wrap;
   - -ms-flex-wrap: wrap;
   - flex-wrap: wrap;
+
 - Flex direction and flex wrap can be combined with the shorthand property flex-flow
   - -webkit-flex-flow: row wrap;
   - -ms-flex-flow: row wrap;
   - flex-flow: row wrap;
-- To align items across the main axis
+
+- Set justify-content to align items across the main axis.  Options are flext-start, flex-end,
+center, space-around, space-between
   - -webkit-justify-content: flex-start;
   - -ms-flex-pack: start;
   - justify-content: flex-start;
-- To align items along the cross axis
+
+- Set align-items to align flex items along the cross axis.  Options are flex-start, flex-end,
+center, stretch, and baseline
   - -webkit-align-items: flex-start;
   - -ms-flex-align: start;
   - align-items: flex-start;
@@ -87,7 +95,14 @@ row reverse, column, column reverse.
   - -ms-flex: 1 1 100px;
   - flex: 1 1 100px;
 
+- Set the source property to change the source order of items
+  - -webkit-order: [integer];
+  - -ms-order: [integer];
+  - order: [integer];
+
 ###Notes
+- As support increases, flexbox will most likely be used in combination with css-grids to control web layouts much
+like floats and positioning are used today
 - Beware when using margins on your flex-items
 
   ##Resources
