@@ -13,7 +13,7 @@ layouts in two dimensions.
 
 ###Use-cases
 - Vertically aligning elements
-- Making multiple <div>s the same height
+- Making equal height columns
 - Aligning elements based on a text's baseline
 
 ##Browser compatibility
@@ -24,6 +24,7 @@ for updated support information.
 
 
 ##How to use
+- Syntax: old syntax vs. tweener syntax vs. new syntax
 - Main axis vs. cross axis
   - If flex-direction is row, main axis is horizontal and cross axis is vertical
   - If flex-direction is column, main axis is vertical and cross axis is horizontal
@@ -32,6 +33,8 @@ for updated support information.
 - Wrap the elements you want to use flexbox on with a container such as a div or
 section.
 - Add a class to the container to target it with your css (ex. flex-container)
+
+###Set the following on your container
 - Use css display property
   - display: -webkit-flex;
   - display: -ms-flexbox;
@@ -45,12 +48,22 @@ row reverse, column, column reverse.
   - -webkit-flex-wrap: wrap;
   - -ms-flex-wrap: wrap;
   - flex-wrap: wrap;
-- Flex direction and flex wrap can be shorthaned to flex-flow
+- Flex direction and flex wrap can be shorthanded to flex-flow
   - -webkit-flex-flow: row wrap;
   - -ms-flex-flow: row wrap;
   - flex-flow: row wrap;
+- To align items along the cross axis
+  - -webkit-align-items: flex-start;
+  - -ms-flex-align: start;
+  - align-items: flex-start;
+
+###Set the following on  your flex items
 - Set the flex property
   - syntax "flex: [flex-grow] [flex-shrink] [flex-basis]"
   - -webkit-flex: 1 1 100px;
   - -ms-flex: 1 1 100px;
   - flex: 1 1 100px;
+
+  ##Resources
+  - http://flexboxfroggy.com/
+  - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
