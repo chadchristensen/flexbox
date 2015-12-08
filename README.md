@@ -32,7 +32,7 @@ layouts in two dimensions.
   <img src="img/flexdirectioncolumn.png" style="width: 250px" />
 
 ##Browser compatibility
-Flexbox has seen good support with most browsers, however, IE still has many bugs. Check http://caniuse.com/#search=flexbox
+Flexbox has seen increased browser support, however, IE still has many bugs. Check http://caniuse.com/#search=flexbox
 for updated support information.
 - 93% support for prefixed
 - 82% support for unprefixed
@@ -61,7 +61,7 @@ section.
   - display: flex;
 
 - Set the flex-direction (default direction is row).  Options are row,
-row reverse, column, column reverse.
+row-reverse, column, column-reverse.
   - -webkit-flex-direction: row;
   -  -ms-flex-direction: row;
   - flex-direction: row;
