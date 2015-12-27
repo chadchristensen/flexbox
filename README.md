@@ -56,26 +56,33 @@ section.
 ###Set the following on your container
 - Use css display property
  ```css
-  - display: -webkit-flex;
-  - display: -ms-flexbox;
-  - display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
  ```
 
 - Set the flex-direction (default direction is row).  Options are row,
 row-reverse, column, column-reverse.
-  - -webkit-flex-direction: row;
-  -  -ms-flex-direction: row;
-  - flex-direction: row;
+  ```css
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  ```
 
 - Set the wrap property if you don't want overflow.  Options are nowrap, wrap, wrap-reverse.
-  - -webkit-flex-wrap: wrap;
-  - -ms-flex-wrap: wrap;
-  - flex-wrap: wrap;
+  
+  ```css 
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  ```
 
 - Flex direction and flex wrap can be combined with the shorthand property flex-flow
-  - -webkit-flex-flow: row wrap;
-  - -ms-flex-flow: row wrap;
-  - flex-flow: row wrap;
+  ```css
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  ```
 
 - Set justify-content to align items across the main axis.  Options are flext-start, flex-end,
 center, space-around, space-between
