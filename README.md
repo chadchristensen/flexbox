@@ -2,7 +2,7 @@
 Document describing the CSS flexbox at a high level
 #CSS: Flexbox
 
-##Use-cases
+##Why should I care?
 - Vertically aligning elements
 - Making equal height columns
 - Aligning elements based on a text's baseline
@@ -26,10 +26,10 @@ layouts in two dimensions.
   - If flex-direction is column, main axis is vertical and cross axis is horizontal
 
 ####flex-direction set to row
-  <img src="img/flexdirectionrow.png" style="width: 300px" />
+  <img src="img/flexdirectionrow.png"/>
 
 ####flex-direction set to column
-  <img src="img/flexdirectioncolumn.png" style="width: 250px" />
+  <img src="img/flexdirectioncolumn.png"/>
 
 ##Browser compatibility
 Flexbox has seen increased browser support, however, IE still has many bugs. Check http://caniuse.com/#search=flexbox
