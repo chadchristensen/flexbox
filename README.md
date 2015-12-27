@@ -107,6 +107,8 @@ like floats and positioning are used today
 
   ##Resources
   - http://flexboxfroggy.com/
+  - http://flexbox.io/
   - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   - https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
+  - https://github.com/philipwalton/flexbugs
   - http://www.sketchingwithcss.com/samplechapter/cheatsheet.html
