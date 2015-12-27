@@ -86,22 +86,28 @@ row-reverse, column, column-reverse.
 
 - Set justify-content to align items across the main axis.  Options are flext-start, flex-end,
 center, space-around, space-between
-  - -webkit-justify-content: flex-start;
-  - -ms-flex-pack: start;
-  - justify-content: flex-start;
+  ```css
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  ```
 
 - Set align-items to align flex items along the cross axis.  Options are flex-start, flex-end,
 center, stretch, and baseline
-  - -webkit-align-items: flex-start;
-  - -ms-flex-align: start;
-  - align-items: flex-start;
+  ```css
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  ```
 
 ###Set the following on  your flex items
 - Set the flex property
-  - syntax "flex: [flex-grow] [flex-shrink] [flex-basis]"
+- syntax "flex: [flex-grow] [flex-shrink] [flex-basis]"
+  ```css
   - -webkit-flex: 1 1 100px;
   - -ms-flex: 1 1 100px;
   - flex: 1 1 100px;
+  ```
 
 - Set the source property to change the source order of items
   - -webkit-order: [integer];
@@ -114,9 +120,9 @@ like floats and positioning are used today
 - Beware when using margins on your flex-items
 
   ##Resources
-  - http://flexboxfroggy.com/
-  - http://flexbox.io/
-  - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-  - https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
-  - https://github.com/philipwalton/flexbugs
-  - http://www.sketchingwithcss.com/samplechapter/cheatsheet.html
+  - Flexbox Froggy - http://flexboxfroggy.com/
+  - Flexbox.io - http://flexbox.io/
+  - CSS Tricks "Flexbox Guide" - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  - Scotch.io's Guide to Flexbox - https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
+  - Flexbugs - https://github.com/philipwalton/flexbugs
+  - Flexbox cheat sheet - http://www.sketchingwithcss.com/samplechapter/cheatsheet.html
