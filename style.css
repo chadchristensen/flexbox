@@ -169,4 +169,5 @@ section {
 .flex-item-2 {
  /* flex: 3;*/
   font-size: 30px;
+  order: 3;
 }
