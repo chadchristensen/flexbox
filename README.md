@@ -55,9 +55,11 @@ section.
 
 ###Set the following on your container
 - Use css display property
+ ```css
   - display: -webkit-flex;
   - display: -ms-flexbox;
   - display: flex;
+ ```
 
 - Set the flex-direction (default direction is row).  Options are row,
 row-reverse, column, column-reverse.
