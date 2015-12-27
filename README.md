@@ -51,7 +51,6 @@ section.
   <div class="flex-item"></div>
   <div class="flex-item"></div>
 </section>
-
 ```
 
 ###Set the following on your container
