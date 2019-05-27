@@ -2,12 +2,12 @@
 Document describing the CSS flexbox at a high level
 #CSS: Flexbox
 
-##Why should I care?
+## Why should I care?
 - Vertically aligning elements
 - Making equal height columns
 - Aligning elements based on a text's baseline
 
-##Overview
+## Overview
 
 In the flex layout model, the children of a flex container can be laid out in
 any direction, and can "flex" their sizes, either growing to fill unused
@@ -25,19 +25,19 @@ layouts in two dimensions.
   - If flex-direction is row, main axis is horizontal and cross axis is vertical
   - If flex-direction is column, main axis is vertical and cross axis is horizontal
 
-####flex-direction set to row
+#### flex-direction set to row
   <img src="img/flexdirectionrow.png"/>
 
-####flex-direction set to column
+#### flex-direction set to column
   <img src="img/flexdirectioncolumn.png"/>
 
-##Browser compatibility
+## Browser compatibility
 Flexbox has seen increased browser support, however, IE still has many bugs. Check http://caniuse.com/#search=flexbox
 for updated support information.
 - 93% support for prefixed
 - 82% support for unprefixed
 
-##How to use
+## How to use
 
 1. Wrap the elements you want to use flexbox on with a container such as a div or
 section.
@@ -53,7 +53,7 @@ section.
 </section>
 ```
 
-###Set the following on your container
+### Set the following on your container
 - Use css display property
  ```css
   display: -webkit-flex;
@@ -100,7 +100,7 @@ center, stretch, and baseline
   align-items: flex-start;
   ```
 
-###Set the following on  your flex items
+### Set the following on  your flex items
 - Set the flex property
 - syntax "flex: [flex-grow] [flex-shrink] [flex-basis]"
   ```css
@@ -114,7 +114,7 @@ center, stretch, and baseline
   - -ms-order: [integer];
   - order: [integer];
 
-###Notes
+### Notes
 - As support increases, flexbox will most likely be used in combination with css-grids to control web layouts much
 like floats and positioning are used today
 - Beware when using margins on your flex-items
